@@ -3,4 +3,4 @@
 
 echo $_GET['testvariable'];
 ?>
-<?h1>
+</h1>
