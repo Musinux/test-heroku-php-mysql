@@ -6,7 +6,7 @@ $pdo = new PDO("mysql:host=".$dbopts['host'].";dbname=".$dbopts['path'].";charse
 
 $stmt = $pdo->query('INSERT INTO users (firstname, lastname) VALUES ("louis", "cherel")');
 
-$stmt->fetch()
+$stmt->fetch();
 
 echo $_GET['testvariable'];
 ?>
