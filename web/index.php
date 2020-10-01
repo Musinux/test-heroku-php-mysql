@@ -2,7 +2,7 @@
 <?php
 $dbopts = parse_url(getenv('CLEARDB_DATABASE_URL'));
 
-$out = "mysql:host=" . $dbopts['host'] . ";dbname=" . $dbopts['path'] . ";charset=utf8mb4";
+$out = "mysql:host=" . $dbopts['host'] . ";dbname=" . ltrim($dbopts["path"],'/') . ";charset=utf8mb4";
 
 $pdo = new PDO($out, $dbopts['user'], $dbopts['pass']);
 
