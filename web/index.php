@@ -2,7 +2,9 @@
 <?php
 $dbopts = parse_url(getenv('DATABASE_URL'));
 
-$out = "mysql:host=".$dbopts['host'].";dbname=".$dbopts['path'].";charset=utf8mb4";
+echo $dbopts;
+
+$out = "mysql:host=" . $dbopts['host'] . ";dbname=" . $dbopts['path'] . ";charset=utf8mb4";
 echo $out;
 
 $pdo = new PDO($out, $dbopts['user'], $dbopts['pass']);
