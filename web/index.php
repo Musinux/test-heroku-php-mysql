@@ -2,7 +2,7 @@
 <?php
 $dbopts = parse_url(getenv('DATABASE_URL'));
 
-echo $dbopts;
+var_dump($dbopts);
 
 $out = "mysql:host=" . $dbopts['host'] . ";dbname=" . $dbopts['path'] . ";charset=utf8mb4";
 echo $out;
