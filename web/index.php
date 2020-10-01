@@ -10,6 +10,7 @@ $stmt = $pdo->query('INSERT INTO users (firstname, lastname) VALUES ("louis", "c
 
 $stmt->fetch();
 
+echo "machin";
 echo $_GET['testvariable'];
 ?>
 </h1>
